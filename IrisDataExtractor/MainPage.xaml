@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IrisDataExtractor.MainPage">
+
+    <StackLayout>
+        <Button Text="Select File" Clicked="OnSelectFileClicked" />
+        <Label x:Name="SelectedFileLabel" />
+
+        <Label Text="Sepal Length:" />
+        <Entry x:Name="SepalLengthEntry" />
+
+        <Label Text="Sepal Width:" />
+        <Entry x:Name="SepalWidthEntry" />
+
+        <Label Text="Petal Length:" />
+        <Entry x:Name="PetalLengthEntry" />
+
+        <Label Text="Petal Width:" />
+        <Entry x:Name="PetalWidthEntry" />
+
+        <Button Text="Extract Data" Clicked="OnExtractClicked" />
+        <Label x:Name="ResultLabel" />
+    </StackLayout>
+
+</ContentPage>
